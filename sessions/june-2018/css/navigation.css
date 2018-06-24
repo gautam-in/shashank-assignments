@@ -1,0 +1,15 @@
+ul {
+    list-style-type: none;
+}
+li > a {
+    color: green;
+}
+li li a{
+    color: red;
+}
+h1 + p {
+    color: darkgray;
+}
+h1 ~ p {
+    font-style: italic;
+}
