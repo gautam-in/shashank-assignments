@@ -1,0 +1,42 @@
+html {
+    font-size: 100%;
+}
+header {
+    height: 6.25rem;
+    background: #f0f0f0;
+}
+.logo {
+    height: 5rem;
+    margin: 0.625rem;
+    float: left;
+}
+nav {
+    float: left;
+}
+ul {
+    padding: 0;
+    list-style-type: none;
+    font-size: 0;
+}
+li {
+    display: inline-block;
+    font-size: 0.875rem;
+}
+a {
+    display: block;
+    line-height: 6.25rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0 1.25rem;
+    color: #333;
+    font-weight: bold;
+}
+.style1:hover {
+    /*color: #07c;*/
+    background: #07c;
+    color: #fff;
+}
+.style2:hover {
+    border-bottom: 5px solid #07c;
+    height: 5.9375rem;
+}
