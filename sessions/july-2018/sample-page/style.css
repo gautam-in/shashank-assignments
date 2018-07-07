@@ -1,0 +1,108 @@
+body {
+    background: #f1f1f1;
+}
+.clearfix::after{
+    display: table;
+    clear: both;
+    content: '';
+}
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+.header {
+    background: #333;
+    color: #fff;
+}
+.header__logo {
+    padding: 20px;
+    width: 50%;
+    float: left;
+    box-sizing: border-box;
+    font-size: 50px;
+}
+.header__user-section {
+    width: 50%;
+    float: left;
+    height: 90px;
+    text-align: right;
+}
+.header__user-section__user-name {
+    color: #fff;
+    font-size: 16px;
+    line-height: 90px;
+    text-decoration: none;
+}
+.header__user-section__image {
+    color: #000;
+    background: #fff;
+    font-size: 30px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 100%;
+}
+.header__user-section__logout {
+    color: #ccc;
+    margin-left: 30px;
+    font-size: 30px;
+}
+.header__user-section__logout:hover {
+    color: #fff;
+}
+
+
+.sidebar {
+    width: 30%;
+    float: left;
+}
+.nav {
+
+}
+.nav__list {
+
+}
+.nav__item {
+
+}
+.nav__link {
+
+}
+
+
+.main {
+    width: 70%;
+    float: left;
+}
+.hero {
+
+}
+.hero__image {
+    max-width: 100%;
+
+}
+.hero__heading {
+
+}
+.hero__cta {
+
+}
+.panels {
+
+}
+.panels__panel {
+
+}
+.panels__panel__heading {
+
+}
+.panels__panel__description {
+
+}
+.footer {
+
+}
+.footer__copyright {
+
+}

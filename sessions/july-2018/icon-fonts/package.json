@@ -1,5 +1,5 @@
 {
-  "name": "navigation",
+  "name": "icon-fonts",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -9,6 +9,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "normalize-css": "^2.3.1"
+    "font-awesome": "^4.7.0"
   }
 }
