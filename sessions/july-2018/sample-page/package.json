@@ -1,5 +1,5 @@
 {
-  "name": "navigation",
+  "name": "sample-page",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "font-awesome": "^4.7.0",
     "normalize-css": "^2.3.1"
   }
 }

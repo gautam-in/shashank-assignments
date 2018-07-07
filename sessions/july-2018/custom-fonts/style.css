@@ -1,0 +1,15 @@
+@font-face {
+    font-family: 'Shashank';
+    src: url('fonts/Galada-Regular.eot');
+    src: url('fonts/Galada-Regular.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Galada-Regular.woff2') format('woff2'),
+        url('fonts/Galada-Regular.woff') format('woff'),
+        url('fonts/Galada-Regular.ttf') format('truetype'),
+        url('fonts/Galada-Regular.svg#Galada-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1 {
+    font-family: 'Shashank', 'Times New Roman', Times, serif;
+}
