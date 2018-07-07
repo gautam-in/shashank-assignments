@@ -1,0 +1,41 @@
+body {
+    font-size: 100%;
+}
+
+header {
+    height: 3.125rem;
+    background: #222;
+}
+ul {
+    padding: 0;
+    /* margin: 0;  */
+    /* Without margin:0 there's some gap left at the top  */
+    font-size:0;
+}
+
+li{
+    display:inline-block ;
+    font-size: 0.9rem;
+    /* will not use padding here */
+}
+
+a{
+    line-height: 3.125rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #DDD;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0px 25px;
+}
+
+.homeimage {
+    height:15px;
+    width:15px;
+    padding: 17.5px 5px;
+    float: left;
+}
+
+.taghover:hover {
+    color:#FFF;
+}
