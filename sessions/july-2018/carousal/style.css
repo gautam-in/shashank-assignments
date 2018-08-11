@@ -1,0 +1,13 @@
+.buttons{
+    font-size: 10px;
+    color: #333;
+}
+.buttons.selected{
+    color:#DDD;
+}
+.images{
+    display: none;
+}
+.images.selected{
+    display: inline;
+}

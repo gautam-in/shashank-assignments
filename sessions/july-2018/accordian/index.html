@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="tabs">
+        <div class="tab" href="#first"></div>
+        <div class="tab-content close" id="first"></div>
+        <div class="tab" href="#second"></div>
+        <div class="tab-content close" id="second"></div>
+        <div class="tab" href="#third"></div>
+        <div class="tab-content close" id="third" ></div>
+    </div>
+    <script>
+        class Tabs{
+            constructor(element){
+                this.element = element;
+                this.tab = element.querySelectorAll(".tab");
+                this.tabcontent = element.querySelectorAll(".tab-content");
+                this.bindEvents();
+            }
+            bindEvents(){
+                this.element.addEventListener('click', (event) =>{ // We used 'this' before element here 
+                    if(event.target.classList.contains('tab')){
+                        this.selectTab(event.target);                    }
+                });
+            }
+            selectTab(currentTab){
+                this.element.querySelector(currentTab.getAttribute('href')).classList.toggle('open');
+            }
+        }
+        window.addEventListener( 'DOMContentLoaded', function() {
+        var tabs = document.querySelectorAll('.tabs');
+        for(const tab of tabs) {
+            new Tabs(tab);
+            }
+        });
+    </script>
+</body>
+</html>

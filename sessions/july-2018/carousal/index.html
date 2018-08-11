@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="sliders">
+        <div class="sliderimages">
+            <img class="images" src="images/1.jpg" id="first" alt="first image">
+            <img class="images selected" src="images/2.jpg" id="second" alt="second image">
+            <img class="images" src="images/3.jpg" id="third" alt="third image">
+        </div>
+        <div>
+            <i class="fa fa-minus buttons" href="#first"></i>
+            <i class="fa fa-minus buttons selected" href="#second"></i>
+            <i class="fa fa-minus buttons" href="#third"></i>
+        </div>
+    </div>
+    <script>
+        class Sliders{
+            constructor(element){
+                this.element = element;
+                this.buttons = element.querySelectorAll(".buttons");
+                this.images = element.querySelectorAll(".images");
+                this.bindEvents();
+            }
+            bindEvents(){
+                let i=2;
+                setInterval(() =>{
+                    if(i==this.buttons.length)
+                    {
+                        i=0;
+                    }
+                    this.selectButton(this.buttons[i]);
+                    i++;
+                }, 2000);
+                this.element.addEventListener('click', (event) => {
+                    if(event.target.classList.contains('buttons')){
+                        this.selectButton(event.target);
+                        // want to set the index value of 'event.target' to 'i' here 
+                    }
+                });
+            }
+            selectButton(currentbutton){
+                this.deSelectButton();
+                currentbutton.classList.add('selected');
+                this.element.querySelector(currentbutton.getAttribute('href')).classList.add('selected');
+            }
+            deSelectButton(){
+                for (const button of this.buttons){
+                    button.classList.remove('selected');
+                }
+                for (const image of this.images){
+                    image.classList.remove('selected');
+                    image.classList.add('hide');
+                }
+            }
+        }
+        window.addEventListener( 'DOMContentLoaded', function() {
+        var sliders = document.querySelectorAll('.sliders');
+        for(const slider of sliders) {
+            new Sliders(slider);
+        }
+        });
+    </script>
+</body>   
+</html>

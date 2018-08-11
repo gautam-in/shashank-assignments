@@ -1,0 +1,15 @@
+.tab{
+    height: 20px;
+    background: purple;
+    position: relative;
+    border: 1px solid black;
+}
+.tab-content{
+    height: 70px;
+    background: skyblue;
+    position: relative;
+    display: none;
+}
+.open{
+    display: block;
+}
