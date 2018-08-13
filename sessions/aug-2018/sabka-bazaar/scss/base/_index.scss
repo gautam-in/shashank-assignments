@@ -1,0 +1,7 @@
+@import 'fonts';
+@import '../../node_modules/flexboxgrid/dist/flexboxgrid.min.css';
+@import '../../node_modules/normalizecss/normalize.css';
+body {
+    background: $primaryBgColor;
+    font-family: Dosis, sans-serif;
+}

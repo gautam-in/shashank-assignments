@@ -1,0 +1,94 @@
+.carousel, .myCarousel {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    &__slides, .slides {
+        white-space: nowrap;
+    }
+    &__slide, .slide {
+        width: 100%;
+        display: inline-block;
+        transition: transform 0.5s linear;
+    }
+    &__image, .image {
+        width: 100%;
+    }
+    &__controls, .controls {
+        
+    }
+    %moveButtons {
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        background: $carouselBgColor;
+        top: 50%;
+        transform: translate3d(0, -50%, 0);
+        border: none;
+        &:before, &:after {
+            width: 1px;
+            height: 20px;
+            background: $primaryBgColor;
+            content: ' ';
+            position: absolute;
+        }
+        &[disabled] {
+            opacity: 0.5;   
+        }
+    }
+    &__next, .forward {
+        @extend %moveButtons;
+        right: 0;
+        &:before {
+            transform: rotate(-135deg);
+            bottom: 8px;
+        }
+        &:after {
+            top: 8px;
+            transform: rotate(135deg);
+        }
+    }
+    &__prev, .back {
+        @extend %moveButtons;
+        left: 0;
+        &:before {
+            transform: rotate(-45deg);
+            bottom: 8px;
+        }
+        &:after {
+            transform: rotate(45deg);
+            top: 8px;
+        }
+    }
+    &__pagination, .dots {
+        position: absolute;
+        bottom: 20px;
+        width: 100%;
+        text-align: center;
+    }
+    &__pagination__item, .dot {
+        border: none;
+        background: rgba(0, 0, 0, 0.5);
+        border-radius: 50%;
+        display: inline-block;
+        padding: 5px;
+        margin: 0 8px;
+        &.active {
+            background: rgba(208,2,86, 0.5);
+        }
+    }
+}
+
+.slide {
+    &--heading {
+        background: $secondaryColor;
+        position: relative;
+    }
+    &__heading {
+        color: $headingTextColor;
+        font-size: 3rem;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate3d(-50%, -50%, 0);
+    }
+}

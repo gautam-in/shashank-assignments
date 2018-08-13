@@ -1,0 +1,18 @@
+{
+  "name": "sabka-bazaar",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "watch": "sass --watch scss:styles",
+    "dev": "sass scss:styles",
+    "build": "sass --style compressed scss:styles"
+  },
+  "dependencies": {
+    "flexboxgrid": "^6.3.1",
+    "normalizecss": "^3.0.0"
+  },
+  "devDependencies": {
+    "sass": "^1.10.4"
+  }
+}
