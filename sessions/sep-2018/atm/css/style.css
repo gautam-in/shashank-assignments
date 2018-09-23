@@ -1,0 +1,62 @@
+body {
+    background: #f0f0f0;
+}
+.atm {
+    width: 1000px;
+    margin: 30px auto 0;
+}
+.atm__form, .atm__result {
+    width: 50%;
+    float: left;
+    box-sizing: border-box;
+    padding: 20px;
+}
+.atm__form {
+    background: #fff;
+    box-shadow: 0 0 5px #ccc;
+}
+.atm__form__heading {
+    text-align: center;
+}
+.atm__result__heading {
+    font-size: 16px;
+}
+.form__label {
+    width: 100%;
+    font-size: 14px;
+    color: #999;
+    display: block;
+    padding: 10px 0;
+}
+.form__field {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 18px;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+}
+.button {
+    width: 100%;
+    display: block;
+    padding: 20px;
+    background: #0075d5;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.currency-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: grid;
+    column-count: 2;
+    grid-template-columns: auto auto;
+    width: 100%;
+}
+.currency-list__item {
+    padding: 10px 0;
+    border-top: 1px solid #ccc;
+}
